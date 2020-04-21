@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin&display=swap');
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 320px;
+    background: #FFFFFF;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    line-height: 1.4285em;
+	width: 90%;
+    margin: 3em auto;
+}
+
+
+/*!
+ * # Fomantic-UI - Card
+ * http://github.com/fomantic/Fomantic-UI/
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Standard
+*******************************/
+
+
+
+
+.wpcm.cards > .card {
+  max-width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 290px;
+  min-height: 0;
+  background: #FFFFFF;
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: 0 1px 3px 0 #D4D4D5, 0 0 0 1px #D4D4D5;
+          box-shadow: 0 1px 3px 0 #D4D4D5, 0 0 0 1px #D4D4D5;
+  -webkit-transition: -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  transition: box-shadow 0.1s ease, transform 0.1s ease, -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  z-index: '';
+  word-wrap: break-word;
+}
+.wpcm.card {
+  margin: 1em 0;
+}
+.wpcm.cards > .card a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+.wpcm.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -0.875em -0.5em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.wpcm.cards > .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.875em 0.5em;
+  float: none;
+}
+
+/* Clearing */
+.wpcm.cards:after,
+.wpcm.card:after {
+  display: block;
+  content: ' ';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* Consecutive Card Groups Preserve Row Spacing */
+.wpcm.cards ~ .wpcm.cards {
+  margin-top: 0.875em;
+}
+
+
+
+.wpcm.cards > .card > .image {
+  position: relative;
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+.wpcm.cards > .card > .image > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: inherit;
+}
+
+
+
+.wpcm.cards > .card > .content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: none;
+  border-top: 1px solid rgba(34, 36, 38, 0.1);
+  background: none;
+  margin: 0;
+  padding: 1em 0;
+  font-size: 1em;
+}
+.wpcm.cards > .card > .content:after {
+  display: block;
+  content: ' ';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.wpcm.cards > .card > .content > .header {
+  display: block;
+  padding: 0 1em;
+}
+
+/* Default Header Size */
+.wpcm.cards > .card > .content > .header h3 {
+  margin-bottom: 0.214em;
+  margin-top: -0.214em;
+  line-height: 1.285em;
+}
+
+
+.wpcm.cards > .card .meta {
+  font-size: 1em;
+  padding: 0 1em;
+}
+.wpcm.cards > .card .meta * {
+  margin-right: 0.3em;
+}
+.wpcm.cards > .card .meta :last-child {
+  margin-right: 0;
+}
+.wpcm.cards > .card .meta [class*="right floated"] {
+  margin-right: 0;
+  margin-left: 0.3em;
+}
+
+
+
+
+/* Header */
+.wpcm.cards > .card > .content > a.header {
+  color: rgba(0, 0, 0, 0.85);
+}
+.wpcm.cards > .card > .content > a.header:hover {
+  color: #1e70bf;
+}
+
+
+
+.wpcm.cards > .card > .extra {
+  max-width: 100%;
+  min-height: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  position: static;
+  background: none;
+  width: auto;
+  margin: 0 0;
+  padding: 0.75em 1em;
+  top: 0;
+  left: 0;
+}
+.wpcm.cards > .card > .extra a {
+  color: rgba(0, 0, 0, 0.4);
+}
+.wpcm.cards > .card > .extra a:hover {
+  color: #1e70bf;
+}
+.wpcm.cards > .card > .content ul.stats {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    list-style: none;
+	margin: 0;
+	margin-top: 0.875em;
+    padding: 0.75em 1em;
+    width: 100%;
+}
+.wpcm.cards > .card > .content ul.stats > li span {
+    display: inline-block;
+}
+.wpcm.cards > .card > .content ul.stats > li span:first-of-type {
+    width: 66%;
+}
+.wpcm.cards > .card > .content ul.stats > li span:last-of-type {
+    text-align: right;
+    width: 30%;
+}
+
+
+.wpcm.horizontal.cards > .card {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	min-width: 270px;
+	width: 400px;
+	max-width: 100%;
+}
+.wpcm.horizontal.cards > .card > .image {
+  	width: 150px;
+}
+.wpcm.horizontal.cards > .card > .image > img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.wpcm.horizontal.cards > .card > .content {
+	border-top: 0;
+  	-ms-flex-preferred-size: 1px;
+      	flex-basis: 1px;
+}
+.wpcm.horizontal.cards > .card > .extra {
+	border-top: 1px solid rgba(0, 0, 0, 0.05);
+  	-ms-flex-preferred-size: 100%;
+      	flex-basis: 100%;
+}
+
+
+
+/*--------------
+   Card Count
+---------------*/
+
+.wpcm.one.cards {
+  margin-left: 0;
+  margin-right: 0;
+}
+.wpcm.one.cards > .card {
+  width: 100%;
+}
+.wpcm.two.cards {
+  margin-left: -1em;
+  margin-right: -1em;
+}
+.wpcm.two.cards > .card {
+  width: calc(50% - 2em);
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.wpcm.three.cards {
+  margin-left: -1em;
+  margin-right: -1em;
+}
+.wpcm.three.cards > .card {
+  width: calc(33.33333333333333% - 2em);
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.wpcm.four.cards {
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+}
+.wpcm.four.cards > .card {
+  width: calc(25% - 1.5em);
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+.wpcm.five.cards {
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+}
+.wpcm.five.cards > .card {
+  width: calc(20% - 1.5em);
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+.wpcm.six.cards {
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+}
+.wpcm.six.cards > .card {
+  width: calc(16.666666666666664% - 1.5em);
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+.wpcm.seven.cards {
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+}
+.wpcm.seven.cards > .card {
+  width: calc(14.285714285714285% - 1em);
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.wpcm.eight.cards {
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+}
+.wpcm.eight.cards > .card {
+  width: calc(12.5% - 1em);
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 11px;
+}
+
+/*-------------------
+        Doubling
+  --------------------*/
+
+
+/* Mobile Only */
+@media only screen and (max-width: 767.98px) {
+  .wpcm.two.cards {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .wpcm.two.cards > .card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .wpcm.three.cards {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .wpcm.three.cards > .card {
+    width: calc(50% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .wpcm.four.cards {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .wpcm.four.cards > .card {
+    width: calc(50% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .wpcm.five.cards {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .wpcm.five.cards > .card {
+    width: calc(50% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .wpcm.six.cards {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .wpcm.six.cards > .card {
+    width: calc(50% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .wpcm.seven.cards {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .wpcm.seven.cards > .card {
+    width: calc(33.33333333333333% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .wpcm.eight.cards {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .wpcm.eight.cards > .card {
+    width: calc(33.33333333333333% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+/* Tablet Only */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .wpcm.two.cards {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .wpcm.two.cards > .card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .wpcm.three.cards {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .wpcm.three.cards > .card {
+    width: calc(50% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .wpcm.four.cards {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .wpcm.four.cards > .card {
+    width: calc(50% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .wpcm.five.cards {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .wpcm.five.cards > .card {
+    width: calc(33.33333333333333% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .wpcm.six.cards {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .wpcm.six.cards > .card {
+    width: calc(33.33333333333333% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .wpcm.eight.cards {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .wpcm.eight.cards > .card {
+    width: calc(33.33333333333333% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .wpcm.eight.cards {
+    margin-left: -0.75em;
+    margin-right: -0.75em;
+  }
+  .wpcm.eight.cards > .card {
+    width: calc(25% - 1.5em);
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+  }
+}
+
+/*-------------------
+        Stackable
+  --------------------*/
+
+@media only screen and (max-width: 478.98px) {
+    .wpcm.cards {
+      	display: block !important;
+    }
+    .wpcm.cards .card:first-child {
+      	margin-top: 0 !important;
+    }
+    .wpcm.cards > .card {
+		display: block !important;
+		height: auto !important;
+		margin: 1em 1em;
+		padding: 0 !important;
+		width: calc(100% - 2em) !important;
+    }
+    .wpcm.horizontal.cards > .card > .image {
+      	width: 100%;
+    }
+}

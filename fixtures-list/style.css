@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin&display=swap');
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 320px;
+    background: #FFFFFF;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    line-height: 1.4285em;
+	width: 90%;
+	margin: 3em auto;
+}
+
+/*!
+ * # Fomantic-UI - List
+ * http://github.com/fomantic/Fomantic-UI/
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+.wpcm.match-list {
+	list-style-type: none;
+  	margin: 1em 0;
+  	padding: 0 0;
+}
+.wpcm.match-list > .match {
+	border-top: 1px solid rgba(34, 36, 38, 0.1);
+	display: list-item;
+  	table-layout: fixed;
+  	list-style-type: none;
+  	list-style-position: outside;
+  	padding: 0;
+  	line-height: 1.142em;
+}
+.wpcm.match-list > .match:first-child {
+	border-top: none;
+}
+.wpcm.match-list > .match > a {
+	cursor: pointer;
+	color: inherit;
+	display: block;
+	padding: 0;
+	text-decoration: none;
+}
+.wpcm.match-list > .match .overview {
+	display: block;
+	padding: 0.785em 0.785em;
+	position: relative;
+	width: 100%;
+}
+.wpcm.match-list > .match .overview span {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+}
+.wpcm.match-list > .match .overview .date {
+	width: 16%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.wpcm.match-list > .match .overview .teams {
+	font-size: 0;
+	margin-right: -4px;
+	width: 47%;
+}
+.wpcm.match-list > .match .overview .teams .team {
+	font-weight: 400;
+	font-size: 1rem;
+	padding-left: 3.6rem;
+	width: 50%;
+}
+.wpcm.match-list > .match .overview .teams .team:first-of-type {
+	padding-left: 0;
+	padding-right: 3.6rem;
+	text-align: right;
+}
+.wpcm.match-list > .match .overview .teams .score,
+.wpcm.match-list > .match .overview .teams .start {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	line-height: 2rem;
+	margin-left: -2.5rem;
+	margin-top: -1rem;
+	text-align: center;
+	width: 5rem;
+	background: #898989;
+	font-size: 1rem;
+	color: #fff;
+    font-weight: 400;
+}
+.wpcm.match-list > .match .overview .teams .score.win {
+	background: green;
+}
+.wpcm.match-list > .match .overview .teams .score.loss {
+	background: red;
+}
+.wpcm.match-list > .match .overview .teams .start {
+	background: #fff;
+	color: inherit;
+}
+.wpcm.match-list > .match .overview .teams .team img.badge {
+	height: 25px;
+	width: 25px;
+	vertical-align: middle;
+	margin-left: 0;
+	margin-right: 1em;
+}
+.wpcm.match-list > .match .overview .teams .team:first-of-type img.badge {
+	margin-left: 1em;
+	margin-right: 0;
+}
+
+.wpcm.match-list > .match .overview .comp {
+	width: 18%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 1rem;
+}
+.wpcm.match-list > .match .overview .venue {
+	width: 18%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 1rem;
+}
+.wpcm.match-list > .match .overview .more {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	line-height: 2rem;
+	margin-top: -1rem;
+	text-align: center;
+	font-size: 1rem;
+	text-align: center;
+	width: 3rem;
+}
+
+.wpcm.match-list > .match .overview .teams .abbr {
+	display: none;
+}
+
+@media only screen and (max-width: 767.98px) {
+
+	.wpcm.match-list > .match .overview .date {
+		display: block;
+		margin-bottom: 1em;
+		text-align: center;
+		width: 100%;
+	}
+	.wpcm.match-list > .match .overview .teams {
+		display: block;
+		width: 100%;
+	}
+	.wpcm.match-list > .match .overview .teams .abbr {
+		display: inline-block;
+	}
+	.wpcm.match-list > .match .overview .teams .longname,
+	.wpcm.match-list > .match .overview .venue,
+	.wpcm.match-list > .match .overview .more {
+		display: none;
+	}
+	.wpcm.match-list > .match .overview .comp {
+		display: block;
+		margin-top: 1em;
+		padding-left: 0;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	.wpcm.match-list > .match .overview .date,
+	.wpcm.match-list > .match .overview .comp {
+		width: 25%
+	}
+	.wpcm.match-list > .match .overview .teams {
+		width: 49%;
+	}
+	.wpcm.match-list > .match .overview .teams .abbr {
+		display: inline-block;
+	}
+	.wpcm.match-list > .match .overview .comp {
+		text-align: right;
+	}
+	.wpcm.match-list > .match .overview .teams .longname,
+	.wpcm.match-list > .match .overview .venue,
+	.wpcm.match-list > .match .overview .more {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+	.wpcm.match-list > .match .overview .teams {
+		width: 62%;
+	}
+	.wpcm.match-list > .match .overview .comp {
+		text-align: right;
+	}
+	.wpcm.match-list > .match .overview .venue,
+	.wpcm.match-list > .match .overview .more {
+		display: none;
+	}
+}

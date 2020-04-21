@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin&display=swap');
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 320px;
+    background: #FFFFFF;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    line-height: 1.4285em;
+	width: 90%;
+    margin: 3em auto;
+}
+
+.wpcm.table {
+    overflow-x: auto;
+}
+.wpcm.table table {
+    width: 100%;
+    /* border: 1px solid rgba(34, 36, 38, 0.15); */
+    text-align: left;
+    vertical-align: middle;
+    border-collapse: separate;
+	border-spacing: 0;
+	text-align: center;
+	white-space: nowrap;
+}
+.wpcm.table table > thead > tr > th {
+    padding: 0.928em 0.785em;
+    border-bottom: 1px solid rgba(34, 36, 38, 0.1);
+    border-left: none;
+}
+.wpcm.table table > tbody > tr > td,
+.wpcm.table table > tr > td {
+	border-top: 1px solid rgba(34, 36, 38, 0.1);
+    padding: 0.785em 0.785em;
+}
+.wpcm.table table > thead > tr > th:first-child {
+    border-left: none;
+}
+.wpcm.table table > tr:first-child > td,
+.wpcm.table table > tbody > tr:first-child > td {
+    border-top: none;
+}
+
+
+.wpcm.table table thead tr th.player,
+.wpcm.table table tbody tr td.player {
+	text-align: left;
+	width: 31.25%;
+}
+.wpcm.table table tbody tr td.player {
+	padding: 0;
+	cursor: pointer;
+}
+.wpcm.table table tbody tr td.player > a {
+    display: block;
+    color: inherit;
+    padding: 0.785em 0.785em;
+    text-decoration: none;
+}
+.wpcm.table table tbody tr td.player img.avatar {
+	height: 25px;
+	width: auto;
+	vertical-align: middle;
+	margin-left: 0;
+	margin-right: 1em;
+}
+
+@media only screen and (max-width: 767.98px) {
+
+    .wpcm.table table > thead > tr > th {
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+    }
+    .wpcm.table table > tbody > tr > td,
+    .wpcm.table table tbody tr td.player > a {
+        padding: 0.6em 0.7em;
+    }
+    .wpcm.table table tbody tr td.player img.avatar {
+		display: none;
+	}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .wpcm.table table > thead > tr > th {
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+    }
+    .wpcm.table table > tbody > tr > td,
+    .wpcm.table table tbody tr td.player > a {
+        padding: 0.6em 0.7em;
+    }
+    .wpcm.table table thead tr th.player,
+    .wpcm.table table tbody tr td.player {
+        width: auto;
+    }
+}
